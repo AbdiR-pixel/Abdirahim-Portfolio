@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Abdirahim M. — Digital Designer</title>
+  
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="assets/all-css-files/project-university-registration.css">
+<link rel="stylesheet" href="assets/all-css-files/projects.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <img src="https://framerusercontent.com/images/GOiWsB6KPVYhovp1Aaczt44ZLT0.png" alt="Abdirahim M.">
+      Abdirahim M.
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav gap-1 align-items-lg-center">
+        <li class="nav-item"><a class="nav-link " href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link " href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link active" href="projects.html">Projects</a></li>
+        <li class="nav-item"><a class="nav-link " href="blogs.html">Blogs</a></li>
+        <li class="nav-item"><a class="nav-link " href="resume.html">Resume</a></li>
+        <li class="nav-item ms-2"><a class="nav-link btn-nav" href="index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="col-lg-8" data-aos="fade-up">
+      <span class="section-label">Portfolio</span>
+      <h1 class="section-title" style="font-size:clamp(2.5rem,5vw,4rem);">Featured Projects</h1>
+      <p class="section-subtitle">These selected projects reflect my passion for blending strategy with creativity — solving real problems through thoughtful design and impactful storytelling.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section-pad">
+  <div class="container">
+    <!-- Filter buttons -->
+    <div class="d-flex flex-wrap gap-2 mb-5" data-aos="fade-up">
+      <button class="filter-btn active" onclick="filterProjects('all', this)">All</button>
+      <button class="filter-btn" onclick="filterProjects('dev', this)">Development</button>
+      <button class="filter-btn" onclick="filterProjects('design', this)">Design</button>
+      <button class="filter-btn" onclick="filterProjects('branding', this)">Branding</button>
+    </div>
+
+    <!-- MY 3 CUSTOM PROJECTS — FEATURED -->
+    <h2 class="section-title mb-4" style="font-size:1.4rem;" data-aos="fade-up">⭐ My Featured Work</h2>
+    <div class="row g-4 mb-5">
+
+      <div class="col-lg-4 col-md-6" data-category="dev" data-aos="fade-up">
+        <a href="assets/projects folders/project-sonic-dash.html" class="project-card">
+          <div class="project-placeholder" style="background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);">
+            <div class="text-center">
+              <div style="font-size:3.5rem;">🎮</div>
+              <div style="color:var(--accent);font-weight:700;font-size:0.9rem;margin-top:0.5rem;">C++ / Game</div>
+            </div>
+          </div>
+          <div class="project-body">
+            <span class="tag">C++ / Game Dev</span>
+            <h3 style="font-size:1.1rem;margin:0.5rem 0;">Sonic Dash — C++ Game</h3>
+            <p style="color:var(--text-muted);font-size:0.88rem;margin-bottom:1rem;">An endless runner game inspired by Sonic Dash, built in C++ with speed mechanics, obstacles, and a scoring system.</p>
+            <div class="d-flex gap-2 flex-wrap">
+              <span style="background:var(--surface2);border:1px solid var(--border);color:var(--text-muted);font-size:0.72rem;padding:0.2rem 0.6rem;border-radius:999px;">C++</span>
+              <span style="background:var(--surface2);border:1px solid var(--border);color:var(--text-muted);font-size:0.72rem;padding:0.2rem 0.6rem;border-radius:999px;">OOP</span>
+              <span style="background:var(--surface2);border:1px solid var(--border);color:var(--text-muted);font-size:0.72rem;padding:0.2rem 0.6rem;border-radius:999px;">GitHub</span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-lg-4 col-md-6" data-category="dev" data-aos="fade-up" data-aos-delay="100">
+        <a href="assets/projects folders/project-university-registration.html" class="project-card">
+          <div class="project-placeholder" style="background:linear-gradient(135deg,#1a1a2e,#16213e,#0f3460);">
+            <div class="text-center">
+              <div style="font-size:3.5rem;">🎓</div>
+              <div style="color:var(--accent);font-weight:700;font-size:0.9rem;margin-top:0.5rem;">Data Structures</div>
+            </div>
+          </div>
+          <div class="project-body">
+            <span class="tag">Data Structures</span>
+            <h3 style="font-size:1.1rem;margin:0.5rem 0;">University Registration System</h3>
+            <p style="color:var(--text-muted);font-size:0.88rem;margin-bottom:1rem;">A course registration system using linked lists, trees & queues — built as a university data structures project.</p>
+            <div class="d-flex gap-2 flex-wrap">
+              <span style="background:var(--surface2);border:1px solid var(--border);color:var(--text-muted);font-size:0.72rem;padding:0.2rem 0.6rem;border-radius:999px;">C++</span>
+              <span style="background:var(--surface2);border:1px solid var(--border);color:var(--text-muted);font-size:0.72rem;padding:0.2rem 0.6rem;border-radius:999px;">Linked Lists</span>
+              <span style="background:var(--surface2);border:1px solid var(--border);color:var(--text-muted);font-size:0.72rem;padding:0.2rem 0.6rem;border-radius:999px;">Trees</span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-lg-4 col-md-6" data-category="design" data-aos="fade-up" data-aos-delay="200">
+        <a href="assets/projects folders/project-framer-portfolio.html" class="project-card">
+          <img src="https://framerusercontent.com/images/w08JBQPFYIq2vr4OfcD9W6vxEug.jpeg" alt="Portfolio" class="project-img">
+          <div class="project-body">
+            <span class="tag">Web Design</span>
+            <h3 style="font-size:1.1rem;margin:0.5rem 0;">Framer Portfolio Website</h3>
+            <p style="color:var(--text-muted);font-size:0.88rem;margin-bottom:1rem;">A personal portfolio designed and built in Framer with dark theme, animations, and fully responsive layout.</p>
+            <div class="d-flex gap-2 flex-wrap">
+              <span style="background:var(--surface2);border:1px solid var(--border);color:var(--text-muted);font-size:0.72rem;padding:0.2rem 0.6rem;border-radius:999px;">Framer</span>
+              <span style="background:var(--surface2);border:1px solid var(--border);color:var(--text-muted);font-size:0.72rem;padding:0.2rem 0.6rem;border-radius:999px;">UI Design</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <hr class="section-divider mb-5">
+
+    <!-- OTHER PROJECTS -->
+    <h2 class="section-title mb-4" style="font-size:1.4rem;" data-aos="fade-up">More Projects</h2>
+    <div class="row g-4">
+
+      <div class="col-lg-4 col-md-6" data-category="design" data-aos="fade-up">
+        <div class="project-card">
+          <img src="https://framerusercontent.com/images/w08JBQPFYIq2vr4OfcD9W6vxEug.jpeg" alt="Summer Vibes" class="project-img">
+          <div class="project-body">
+            <span class="tag">Graphic Design</span>
+            <h3 style="font-size:1rem;margin:0.5rem 0;">Summer Vibes Festival Campaign</h3>
+            <p style="color:var(--text-muted);font-size:0.85rem;">Created promotional materials for the "Summer Vibes Festival," including posters, flyers, and social media graphics.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6" data-category="branding" data-aos="fade-up" data-aos-delay="100">
+        <div class="project-card">
+          <img src="https://framerusercontent.com/images/qbjsnnvP9w7UaA2syp36oUe8OSo.jpg" alt="Coral Spiral" class="project-img">
+          <div class="project-body">
+            <span class="tag">Branding</span>
+            <h3 style="font-size:1rem;margin:0.5rem 0;">Coral Spiral Abstract</h3>
+            <p style="color:var(--text-muted);font-size:0.85rem;">A visually striking 3D abstract artwork featuring a coral-colored spiral form with smooth, flowing curves and organic geometry.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6" data-category="design" data-aos="fade-up" data-aos-delay="200">
+        <div class="project-card">
+          <img src="https://framerusercontent.com/images/nTU7b0ZAdWdlqCI4mQ4tGTPpDs.jpeg" alt="ShopEase" class="project-img">
+          <div class="project-body">
+            <span class="tag">UI / UX Design</span>
+            <h3 style="font-size:1rem;margin:0.5rem 0;">ShopEase Redesign Sprint</h3>
+            <p style="color:var(--text-muted);font-size:0.85rem;">Redesigned the ShopEase e-commerce app to enhance UX. Simplified navigation and optimized the checkout process.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6" data-category="branding" data-aos="fade-up">
+        <div class="project-card">
+          <img src="https://framerusercontent.com/images/2nWXrWvPxxMHSpsOkNYf8KjzP7Q.jpeg" alt="Black Geometric" class="project-img">
+          <div class="project-body">
+            <span class="tag">Branding</span>
+            <h3 style="font-size:1rem;margin:0.5rem 0;">Black Geometric Prisms</h3>
+            <p style="color:var(--text-muted);font-size:0.85rem;">Angular black prisms floating against a gradient dark background — a modern approach to digital 3D geometric composition.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6" data-category="design" data-aos="fade-up" data-aos-delay="100">
+        <div class="project-card">
+          <img src="https://framerusercontent.com/images/RFcUbpIGFydbU9WBSTc9HJRQI.jpeg" alt="Pantone" class="project-img">
+          <div class="project-body">
+            <span class="tag">Graphic Design</span>
+            <h3 style="font-size:1rem;margin:0.5rem 0;">Pantone Very Peri Poster Design</h3>
+            <p style="color:var(--text-muted);font-size:0.85rem;">A minimalist poster inspired by Pantone's Color of the Year 2022, combining clean typography with a soft periwinkle palette.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6" data-category="branding" data-aos="fade-up" data-aos-delay="200">
+        <div class="project-card">
+          <img src="https://framerusercontent.com/images/NbFTTP3LTcQw2s8139xTJnscc.jpeg" alt="InnovateTech" class="project-img">
+          <div class="project-body">
+            <span class="tag">Branding</span>
+            <h3 style="font-size:1rem;margin:0.5rem 0;">InnovateTech Identity Rollout</h3>
+            <p style="color:var(--text-muted);font-size:0.85rem;">Developed a brand identity for InnovateTech, including logo design, color palette, and visual style guide.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider">
+
+<script>
+function filterProjects(cat, btn) {
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('[data-category]').forEach(card => {
+    const parent = card.closest('[data-category]') || card;
+    if (cat === 'all' || card.dataset.category === cat) {
+      card.style.display = '';
+    } else {
+      card.style.display = 'none';
+    }
+  });
+}
+</script>
+
+
+<footer>
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6">
+        <div class="footer-brand">Abdirahim M.</div>
+        <p class="footer-text mb-3">Digital designer & Framer developer crafting meaningful digital experiences.</p>
+        <div class="available-badge" style="font-size:0.75rem;">
+          <span class="available-dot"></span> Available for work
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-6">
+        <h6>Navigation</h6>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="blogs.html">Blogs</a></li>
+          <li><a href="resume.html">Resume</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <h6>Services</h6>
+        <ul>
+          <li><a href="#">UI / UX Design</a></li>
+          <li><a href="#">Graphic Design</a></li>
+          <li><a href="#">Web Design</a></li>
+          <li><a href="#">Branding</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <h6>Contact</h6>
+        <p class="footer-text mb-1"><i class="fas fa-envelope me-2 text-accent"></i><a href="mailto:youneedall705@gmail.com" class="footer-text">youneedall705@gmail.com</a></p>
+        <p class="footer-text mb-3"><i class="fas fa-phone me-2 text-accent"></i><a href="tel:+25377483640" class="footer-text">+253 77 48 36 40</a></p>
+        <div class="d-flex gap-2">
+          <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-dribbble"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center">
+      <p class="mb-2 mb-md-0">© 2025 AllYouNeed. All Rights Reserved by Abdirahim M.</p>
+      <p>Made with <span class="text-accent">♥</span> in Djibouti</p>
+    </div>
+  </div>
+</footer>
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+// Simple AOS-like scroll animation
+function initAOS() {
+  const els = document.querySelectorAll('[data-aos]');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        const delay = parseInt(e.target.dataset.aosDelay || 0);
+        setTimeout(() => e.target.classList.add('aos-animate'), delay);
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  els.forEach(el => observer.observe(el));
+}
+
+// Navbar scroll effect
+window.addEventListener('scroll', () => {
+  const nav = document.querySelector('.navbar');
+  if (window.scrollY > 60) nav.style.padding = '0.6rem 0';
+  else nav.style.padding = '1rem 0';
+});
+
+// Counter animation
+function animateCounter(el, end, suffix='') {
+  let start = 0;
+  const step = end / 60;
+  const timer = setInterval(() => {
+    start = Math.min(start + step, end);
+    el.textContent = Math.round(start) + suffix;
+    if (start >= end) clearInterval(timer);
+  }, 25);
+}
+
+function initCounters() {
+  const counters = document.querySelectorAll('[data-count]');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        const end = parseInt(e.target.dataset.count);
+        const suffix = e.target.dataset.suffix || '';
+        animateCounter(e.target, end, suffix);
+        observer.unobserve(e.target);
+      }
+    });
+  });
+  counters.forEach(c => observer.observe(c));
+}
+
+// Form submit
+function handleSubmit(btn) {
+  const original = btn.innerHTML;
+  btn.innerHTML = '<i class="fas fa-check"></i> Sent!';
+  btn.style.background = '#27ae60';
+  setTimeout(() => { btn.innerHTML = original; btn.style.background = ''; }, 3000);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  initAOS();
+  initCounters();
+});
+</script>
+
+</body>
+</html>

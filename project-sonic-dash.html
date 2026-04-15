@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sonic Dash C++ Game | Abdirahim M. — Digital Designer</title>
+  
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="assets/all-css-files/project-sonic-dash.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <img src="https://framerusercontent.com/images/GOiWsB6KPVYhovp1Aaczt44ZLT0.png" alt="Abdirahim M.">
+      Abdirahim M.
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav gap-1 align-items-lg-center">
+        <li class="nav-item"><a class="nav-link " href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link " href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link active" href="projects.html">Projects</a></li>
+        <li class="nav-item"><a class="nav-link " href="blogs.html">Blogs</a></li>
+        <li class="nav-item"><a class="nav-link " href="resume.html">Resume</a></li>
+        <li class="nav-item ms-2"><a class="nav-link btn-nav" href="index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="container">
+    <a href="projects.html" style="color:var(--text-muted);font-size:0.85rem;display:inline-flex;align-items:center;gap:0.4rem;margin-bottom:1.5rem;"><i class="fas fa-arrow-left"></i> Back to Projects</a>
+    <div class="row align-items-center g-4">
+      <div class="col-lg-7" data-aos="fade-right">
+        <span class="section-label">C++ / Game Development</span>
+        <h1 class="section-title" style="font-size:clamp(2rem,4vw,3.5rem);">Sonic Dash — C++ Endless Runner</h1>
+        <p style="color:var(--text-muted);font-size:1rem;max-width:560px;line-height:1.8;margin-bottom:1.5rem;">An endless runner game inspired by the Sonic Dash mobile game, built entirely in C++ as part of a programming course project. Features speed mechanics, procedurally generated obstacles, and a high-score tracking system.</p>
+        <div class="d-flex flex-wrap gap-2 mb-4">
+          <span class="tech-pill"><i class="fas fa-code text-accent"></i> C++</span>
+          <span class="tech-pill"><i class="fas fa-cubes text-accent"></i> OOP</span>
+          <span class="tech-pill"><i class="fas fa-gamepad text-accent"></i> Game Logic</span>
+          <span class="tech-pill"><i class="fab fa-github text-accent"></i> GitHub</span>
+        </div>
+        <a href="https://github.com/AbdiR-pixel/Abdirahim" target="_blank" class="btn-primary-custom"><i class="fab fa-github"></i> View on GitHub</a>
+      </div>
+      <div class="col-lg-5" data-aos="fade-left" data-aos-delay="100">
+        <div style="background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);border-radius:var(--radius);height:340px;display:flex;align-items:center;justify-content:center;border:1px solid var(--border);">
+          <div class="text-center">
+            <div style="font-size:5rem;margin-bottom:1rem;">🎮</div>
+            <div style="color:var(--accent);font-weight:700;font-size:1.1rem;">Sonic Dash C++</div>
+            <div style="color:var(--text-muted);font-size:0.85rem;margin-top:0.5rem;">Console-based Endless Runner</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-pad">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-8" data-aos="fade-up">
+        <h2 class="section-title mb-3" style="font-size:1.6rem;">Project Overview</h2>
+        <p style="color:var(--text-muted);line-height:1.9;margin-bottom:1.2rem;">Sonic Dash is a console-based endless runner built in C++ that draws inspiration from the mobile Sonic Dash game. The player controls a character running at increasing speed, avoiding obstacles and collecting points. As speed increases, reaction time shrinks, creating a compelling difficulty curve.</p>
+        <p style="color:var(--text-muted);line-height:1.9;margin-bottom:2rem;">This project was developed as part of a programming course to demonstrate mastery of object-oriented programming principles, game loop design, and collision detection in C++.</p>
+
+        <h2 class="section-title mb-3" style="font-size:1.6rem;">Key Features</h2>
+        <div class="row g-3 mb-4">
+          <div class="col-md-6">
+            <div class="info-box">
+              <div style="font-size:1.5rem;margin-bottom:0.5rem;">⚡</div>
+              <div style="font-weight:700;margin-bottom:0.4rem;">Progressive Speed System</div>
+              <p style="color:var(--text-muted);font-size:0.88rem;margin:0;">Game speed increases over time, scaling the challenge and keeping players engaged.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="info-box">
+              <div style="font-size:1.5rem;margin-bottom:0.5rem;">🔲</div>
+              <div style="font-weight:700;margin-bottom:0.4rem;">Obstacle Generation</div>
+              <p style="color:var(--text-muted);font-size:0.88rem;margin:0;">Procedurally generated obstacles ensure each run feels unique and unpredictable.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="info-box">
+              <div style="font-size:1.5rem;margin-bottom:0.5rem;">💯</div>
+              <div style="font-weight:700;margin-bottom:0.4rem;">Score Tracking</div>
+              <p style="color:var(--text-muted);font-size:0.88rem;margin:0;">Real-time score display with a persistent high-score system saved between sessions.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="info-box">
+              <div style="font-size:1.5rem;margin-bottom:0.5rem;">🎯</div>
+              <div style="font-weight:700;margin-bottom:0.4rem;">Collision Detection</div>
+              <p style="color:var(--text-muted);font-size:0.88rem;margin:0;">Precise hitbox-based collision detection ensures fair, responsive gameplay.</p>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="section-title mb-3" style="font-size:1.6rem;">Technical Implementation</h2>
+        <p style="color:var(--text-muted);line-height:1.9;margin-bottom:1rem;">The game is structured around core OOP principles, with separate classes handling the player, obstacles, game state, and rendering.</p>
+        
+        <div class="code-block">
+<span class="comment">// Simplified game loop structure</span>
+<span class="keyword">class</span> <span class="type">Game</span> {
+<span class="keyword">private</span>:
+    Player player;
+    ObstacleManager obstacles;
+    ScoreManager scores;
+    <span class="type">float</span> speed = 1.0f;
+    <span class="type">bool</span> running = <span class="keyword">true</span>;
+
+<span class="keyword">public</span>:
+    <span class="type">void</span> run() {
+        <span class="keyword">while</span> (running) {
+            update();
+            render();
+            checkCollisions();
+            increaseSpeed();
+        }
+    }
+
+    <span class="type">void</span> update() {
+        player.move();
+        obstacles.generate(speed);
+        scores.increment(speed);
+    }
+};
+        </div>
+
+        <h2 class="section-title mb-3" style="font-size:1.6rem;">Challenges & Learnings</h2>
+        <p style="color:var(--text-muted);line-height:1.9;margin-bottom:1rem;">Building a game loop in a console environment required careful management of timing and rendering. Key challenges included implementing smooth character movement with keyboard input without causing console flicker, designing a difficulty curve that felt challenging but not frustrating, and managing memory efficiently with dynamic obstacle generation.</p>
+        <p style="color:var(--text-muted);line-height:1.9;">This project deepened my understanding of game architecture patterns, real-time input handling, and the fundamentals of object-oriented design in C++.</p>
+      </div>
+
+      <div class="col-lg-4" data-aos="fade-left" data-aos-delay="100">
+        <div class="info-box">
+          <h4 style="font-size:0.85rem;font-family:'Inter',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:var(--text-muted);margin-bottom:1rem;">Project Details</h4>
+          <div class="info-row"><span class="info-label">Category</span><span class="info-value text-accent">Game Development</span></div>
+          <div class="info-row"><span class="info-label">Language</span><span class="info-value">C++</span></div>
+          <div class="info-row"><span class="info-label">Platform</span><span class="info-value">Console / Terminal</span></div>
+          <div class="info-row"><span class="info-label">Type</span><span class="info-value">University Project</span></div>
+          <div class="info-row"><span class="info-label">Year</span><span class="info-value">2024</span></div>
+          <div class="info-row"><span class="info-label">Status</span><span class="info-value" style="color:#27ae60;">Completed</span></div>
+        </div>
+        <a href="https://github.com/AbdiR-pixel/Abdirahim" target="_blank" class="btn-primary-custom w-100 justify-content-center mb-3"><i class="fab fa-github"></i> View Source Code</a>
+        <a href="projects.html" class="btn-secondary-custom w-100 justify-content-center">← All Projects</a>
+      </div>
+    </div>
+  </div>
+</section>
+<hr class="section-divider">
+
+<section class="section-pad" id="contact">
+  <div class="container">
+    <div class="row justify-content-center mb-5">
+      <div class="col-lg-7 text-center" data-aos="fade-up">
+        <span class="section-label">Let's Connect</span>
+        <h2 class="section-title">Let's work together</h2>
+        <p class="section-subtitle mx-auto">Let's build something impactful together—whether it's your brand, your website, or your next big idea.</p>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="contact-section" data-aos="fade-up" data-aos-delay="100">
+          <div class="d-flex align-items-center gap-3 mb-4">
+            <img src="https://framerusercontent.com/images/0JJDLebZsfml5drpqJ9yI2PRhbQ.png" alt="Abdirahim" style="width:56px;height:56px;border-radius:50%;object-fit:cover;border:2px solid var(--accent);">
+            <div>
+              <div class="fw-700">Abdirahim Mahamoud</div>
+              <div class="text-muted-custom" style="font-size:0.85rem;">Digital Designer &amp; Framer Developer</div>
+            </div>
+          </div>
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label class="form-label-custom">Name</label>
+              <input type="text" class="form-control-custom" placeholder="Your name">
+            </div>
+            <div class="col-md-6">
+              <label class="form-label-custom">Email</label>
+              <input type="email" class="form-control-custom" placeholder="your@email.com">
+            </div>
+            <div class="col-md-6">
+              <label class="form-label-custom">Enterprise Type</label>
+              <select class="form-control-custom">
+                <option value="">Select...</option>
+                <option>Individual</option>
+                <option>Enterprise</option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label-custom">Service Needed</label>
+              <select class="form-control-custom">
+                <option value="">Select...</option>
+                <option>Branding</option>
+                <option>Web Development</option>
+                <option>Web Design</option>
+                <option>UI / UX</option>
+                <option>Ebook Editing</option>
+                <option>AI Automation</option>
+              </select>
+            </div>
+            <div class="col-md-12">
+              <label class="form-label-custom">Pricing</label>
+              <select class="form-control-custom">
+                <option value="">Select...</option>
+                <option>Starter Package</option>
+                <option>Pro Package</option>
+                <option>Premium Package</option>
+                <option>Custom Package</option>
+              </select>
+            </div>
+            <div class="col-12">
+              <label class="form-label-custom">Message</label>
+              <textarea class="form-control-custom" rows="4" placeholder="Tell me what I can help you with..."></textarea>
+            </div>
+            <div class="col-12">
+              <button class="btn-primary-custom" onclick="handleSubmit(this)">
+                <i class="fas fa-paper-plane"></i> Send Message
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer>
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6">
+        <div class="footer-brand">Abdirahim M.</div>
+        <p class="footer-text mb-3">Digital designer & Framer developer crafting meaningful digital experiences.</p>
+        <div class="available-badge" style="font-size:0.75rem;">
+          <span class="available-dot"></span> Available for work
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-6">
+        <h6>Navigation</h6>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="blogs.html">Blogs</a></li>
+          <li><a href="resume.html">Resume</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <h6>Services</h6>
+        <ul>
+          <li><a href="#">UI / UX Design</a></li>
+          <li><a href="#">Graphic Design</a></li>
+          <li><a href="#">Web Design</a></li>
+          <li><a href="#">Branding</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <h6>Contact</h6>
+        <p class="footer-text mb-1"><i class="fas fa-envelope me-2 text-accent"></i><a href="mailto:youneedall705@gmail.com" class="footer-text">youneedall705@gmail.com</a></p>
+        <p class="footer-text mb-3"><i class="fas fa-phone me-2 text-accent"></i><a href="tel:+25377483640" class="footer-text">+253 77 48 36 40</a></p>
+        <div class="d-flex gap-2">
+          <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-dribbble"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center">
+      <p class="mb-2 mb-md-0">© 2025 AllYouNeed. All Rights Reserved by Abdirahim M.</p>
+      <p>Made with <span class="text-accent">♥</span> in Djibouti</p>
+    </div>
+  </div>
+</footer>
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+// Simple AOS-like scroll animation
+function initAOS() {
+  const els = document.querySelectorAll('[data-aos]');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        const delay = parseInt(e.target.dataset.aosDelay || 0);
+        setTimeout(() => e.target.classList.add('aos-animate'), delay);
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  els.forEach(el => observer.observe(el));
+}
+
+// Navbar scroll effect
+window.addEventListener('scroll', () => {
+  const nav = document.querySelector('.navbar');
+  if (window.scrollY > 60) nav.style.padding = '0.6rem 0';
+  else nav.style.padding = '1rem 0';
+});
+
+// Counter animation
+function animateCounter(el, end, suffix='') {
+  let start = 0;
+  const step = end / 60;
+  const timer = setInterval(() => {
+    start = Math.min(start + step, end);
+    el.textContent = Math.round(start) + suffix;
+    if (start >= end) clearInterval(timer);
+  }, 25);
+}
+
+function initCounters() {
+  const counters = document.querySelectorAll('[data-count]');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        const end = parseInt(e.target.dataset.count);
+        const suffix = e.target.dataset.suffix || '';
+        animateCounter(e.target, end, suffix);
+        observer.unobserve(e.target);
+      }
+    });
+  });
+  counters.forEach(c => observer.observe(c));
+}
+
+// Form submit
+function handleSubmit(btn) {
+  const original = btn.innerHTML;
+  btn.innerHTML = '<i class="fas fa-check"></i> Sent!';
+  btn.style.background = '#27ae60';
+  setTimeout(() => { btn.innerHTML = original; btn.style.background = ''; }, 3000);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  initAOS();
+  initCounters();
+});
+</script>
+
+</body>
+</html>
